@@ -9,30 +9,30 @@
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
-    body { background: #f4f6f8; color: #222; }
-    header { background: #0f172a; color: #fff; padding: 20px; }
-    header h1 { font-size: 28px; }
+    body { background: #f1f5f9; color: #1f2937; }
+    header { background: linear-gradient(135deg, #0f172a, #020617); color: #fff; padding: 30px 20px; }
+    header h1 { font-size: 32px; font-weight: 700; }
     header p { font-size: 14px; opacity: 0.9; }
 
-    nav { background: #111827; padding: 10px; display: flex; gap: 15px; justify-content: center; }
-    nav a { color: #fff; text-decoration: none; font-size: 14px; }
+    nav { background: #020617; padding: 12px; display: flex; gap: 20px; justify-content: center; }
+    nav a { color: #e5e7eb; text-decoration: none; font-size: 14px; font-weight: 500; }
     nav a:hover { text-decoration: underline; }
 
     .container { max-width: 1100px; margin: auto; padding: 30px 20px; }
 
-    .hero { background: #fff; padding: 30px; border-radius: 8px; margin-bottom: 30px; }
+    .hero { background: #ffffff; padding: 35px; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
     .hero h2 { font-size: 24px; margin-bottom: 10px; }
     .hero p { font-size: 16px; }
 
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
 
-    .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .card { background: #ffffff; padding: 25px; border-radius: 14px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease; }
     .card h3 { margin-bottom: 10px; }
     .card p { font-size: 14px; margin-bottom: 15px; }
-    .card a { display: inline-block; background: #2563eb; color: #fff; padding: 10px 15px; border-radius: 4px; text-decoration: none; font-size: 14px; }
+    .card a { display: inline-block; background: linear-gradient(135deg, #2563eb, #1e40af); color: #fff; padding: 12px 18px; border-radius: 999px; text-decoration: none; font-size: 14px; font-weight: 600; }
     .card a:hover { background: #1d4ed8; }
 
-    footer { background: #0f172a; color: #fff; padding: 20px; margin-top: 40px; font-size: 13px; text-align: center; }
+    footer { background: #020617; color: #e5e7eb; padding: 30px 20px; margin-top: 60px; font-size: 13px; text-align: center; }
     footer a { color: #93c5fd; text-decoration: none; }
   </style>
 </head>
@@ -55,27 +55,27 @@
 <main class="container">
 
   <section class="hero">
-    <h2>O que é a NexMart?</h2>
-    <p>A NexMart é um site independente de curadoria de produtos. Nosso objetivo é facilitar sua decisão de compra reunindo, em um só lugar, produtos populares e bem avaliados nas categorias casa, games e tecnologia.</p>
-    <p>Não vendemos produtos diretamente. Analisamos opções disponíveis em grandes marketplaces e direcionamos você para a compra segura em lojas parceiras, como a Shopee.</p>
+    <h2>Encontre ofertas inteligentes em um só lugar</h2>
+    <p>Na NexMart você encontra produtos selecionados para casa, games e tecnologia, com foco em custo-benefício, avaliações reais e utilidade no dia a dia.</p>
+    <a href="#ofertas" style="display:inline-block;margin-top:15px;background:linear-gradient(135deg,#2563eb,#1e40af);color:#fff;padding:14px 22px;border-radius:999px;text-decoration:none;font-weight:600;">Ver ofertas agora</a>
   </section>
 
-  <section class="grid">
+  <section id="ofertas" class="grid">
 
     <div class="card">
-      <h3>Produtos para Casa</h3>
-      <p>Utilidades domésticas, organização, cozinha e muito mais.</p>
+      <h3>🏠 Casa & Utilidades</h3>
+      <p>Organização, cozinha, iluminação e produtos que facilitam sua rotina.</p>
       <a href="#">Ver ofertas</a>
     </div>
 
     <div class="card">
-      <h3>Games</h3>
-      <p>Consoles, controles, acessórios e itens gamer.</p>
+      <h3>🎮 Games</h3>
+      <p>Consoles, controles, acessórios e itens gamer populares.</p>
       <a href="#">Ver ofertas</a>
     </div>
 
     <div class="card">
-      <h3>Tecnologia</h3>
+      <h3>📱 Tecnologia</h3>
       <p>Celulares, TVs, gadgets e eletrônicos em destaque.</p>
       <a href="#">Ver ofertas</a>
     </div>
@@ -97,6 +97,30 @@
       <p>A NexMart participa de programas de afiliados, incluindo o Programa de Afiliados da Shopee.</p>
       <p>Isso significa que, ao clicar em links de produtos e realizar uma compra, o site pode receber uma comissão sem nenhum custo adicional para você.</p>
       <p>As recomendações são feitas com base em análise de popularidade, avaliações e utilidade dos produtos. A decisão final de compra é sempre do usuário.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="hero">
+      <h2>Ofertas em destaque</h2>
+      <p>Produtos populares e bem avaliados que valem a pena conferir agora.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>⭐ Produto em destaque</h3>
+          <p>Oferta selecionada com ótimo custo-benefício.</p>
+          <a href="#">Comprar na Shopee</a>
+        </div>
+        <div class="card">
+          <h3>🔥 Mais vendido</h3>
+          <p>Um dos produtos mais procurados do momento.</p>
+          <a href="#">Comprar na Shopee</a>
+        </div>
+        <div class="card">
+          <h3>💡 Recomendação NexMart</h3>
+          <p>Escolha inteligente baseada em avaliações.</p>
+          <a href="#">Comprar na Shopee</a>
+        </div>
+      </div>
     </div>
   </section>
 
